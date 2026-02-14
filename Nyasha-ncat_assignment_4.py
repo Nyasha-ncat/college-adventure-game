@@ -52,9 +52,9 @@ else:
     print(">> Invalid input. The system auto-enrolled you in standard classes.")
     study_hours = 25
     stress_level += 15
-  
 
-# EVENT 2: The Social Scene 
+
+# EVENT 2: The Social Scene
 
 print("\n" + "-" * 30)
 print("[EVENT 2] Friday Night Lights") # J Cole iykyk
@@ -82,7 +82,7 @@ else:
     stress_level += 10
     social_points -= 5
 
-# EVENT 3: The Roommate Dispute 
+# EVENT 3: The Roommate Dispute
 
 print("\n" + "-" * 30)
 print("[EVENT 3] The Dirty Dishes War")
@@ -126,7 +126,7 @@ else:
     print(">> You passed, barely.")
     stress_level += 5
 
-# EVENT 5: Spring Break Plans 
+# EVENT 5: Spring Break Plans
 
 print("\n" + "-" * 30)
 print("[EVENT 5] Spring Break Decision")
@@ -153,7 +153,7 @@ else:
     print(">> You couldn't decide and stayed in the dorms alone.")
     social_points -= 10
 
-# EVENT 6: The Tech Disaster 
+# EVENT 6: The Tech Disaster
 
 print("\n" + "-" * 30)
 print("[EVENT 6] The Laptop Crash")
@@ -166,12 +166,11 @@ if choice_6 == "YES":
     stress_level += 5
     print(">> Thank goodness for the cloud. You only lost 5 minutes of work.")
 else:
-  choice_6 == "NO":
     stress_level += 50
     current_gpa -= 0.4
     print(">> You lost the whole file. Murphy's law in full effect.")
 
-# EVENT 7: The Group Project 
+# EVENT 7: The Group Project
 
 print("\n" + "-" * 30)
 print("[EVENT 7] The Group Project from Hell")
@@ -223,5 +222,3 @@ elif choice_8 == "C":
 else:
     print(">> Panic set in. You blanked.")
     current_gpa -= 0.5
-
-
