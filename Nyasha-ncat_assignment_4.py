@@ -222,3 +222,80 @@ elif choice_8 == "C":
 else:
     print(">> Panic set in. You blanked.")
     current_gpa -= 0.5
+
+# FINAL STAT CALCULATIONS
+
+print("\n" + "="*50)
+print("FINAL SEMESTER AUDIT")
+print("="*50)
+
+# Verifying the integrity of the data types before printing
+if type(current_gpa) is float:
+    print("[System] Data Integrity Verified: OK")
+else:
+    print("[System] Warning: Data Corruption Detected")
+
+print("-" * 20)
+print(f"FINAL NAME:   {student_name}")
+print(f"FINAL GPA:    {current_gpa:.2f}")
+print(f"FINAL STRESS: {stress_level}/100")
+print(f"FINAL SOCIAL: {social_points}")
+print("-" * 20)
+
+# THE ENDING TREE 
+
+print("\n>>> CALCULATING FINAL ARCHETYPE...")
+
+if current_gpa >= 3.8:
+    # Tier 1: Academic Elite
+    if social_points >= 50 and stress_level < 50:
+        print(" ENDING: THE UNICORN")
+        print("Narrative: Perfect grades, popular, and mentally healthy.")
+        print("           Now aren't you just the perfect person (RME)")
+    elif stress_level > 80:
+        print(" ENDING: THE BURNOUT GENIUS")
+        print("Narrative: You have a 4.0 GPA, but at what cost, you had to go to the hospital.")
+        print("           Don't even think of studing during your break.")
+    elif social_points < 15:
+        print(" ENDING: THE GHOST")
+        print("Narrative: The faculty knows you, but students look at you weird.")
+        print("           You lived in the library.")
+    else:
+        print(" ENDING: Good boy")
+        print("Narrative: An excellent performance. Your parents are proud.")
+
+elif current_gpa >= 3.0:
+    # Tier 2: The Good Student
+    if social_points > 70:
+        print(" ENDING: THE POPULAR SCHOLAR")
+        print("Narrative: You mastered work-life balance. Everyone wants to be you.")
+    elif stress_level < 20:
+        print(" ENDING: PEACE")
+        print("Narrative: While everyone else panicked, you breezed through.")
+    else:
+        print(" ENDING: THE SOLID STUDENT")
+        print("Narrative: Nothing fancy, just did what you had to do.")
+
+elif current_gpa >= 2.0:
+    # Tier 3: Survival Mode
+    if social_points > 80:
+        print(" ENDING: THE PARTY ANIMAL")
+        print("Narrative: C's get degrees! You won't remember the classes,")
+        print("           but you'll never forget the parties.")
+    elif stress_level > 90:
+        print(" ENDING: BARELY HANGING ON")
+        print("Narrative: You passed, but you aged 10 years in one semester.")
+    else:
+        print(" ENDING: THE SURVIVOR")
+        print("Narrative: It wasn't pretty, but you didn't fail.")
+
+else:
+    # Tier 4: Failure
+    if social_points > 90:
+        print(" ENDING: THE CAMPUS LEGEND (DROPOUT)")
+        print("Narrative: You failed every class possible, even a walking class.")
+    else:
+        print(" ENDING: ACADEMIC PROBATION")
+        print("Narrative: The Dean would like a word with you. It's over.")
+
+print("="*50)
