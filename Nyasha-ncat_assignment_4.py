@@ -4,8 +4,8 @@ Assignment: Chapter 4 - College Life Adventure Game (Extended Edition)
 Name: Nyasha
 GitHub Username: Nyasha-ncat
 Date: February 13, 2026
-Description: An expanded college simulation game spanning the full semester.
-             Manages GPA, Stress, and Social Points through 6 distinct events.
+Description: Just the life of a college student game. Experiance a few of the things they experiance.
+AI Use: I use it to figure out how to include an identity operator into my program
 """
 
 # Step 1: Foundation Setup
